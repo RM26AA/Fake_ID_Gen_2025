@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = "AIzaSyDlLiOgzIZqToAUBC-XC5DRzhWdwjWB1xk";
-const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
+const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 interface GeneratedIdentity {
   name: string;
@@ -99,10 +99,11 @@ Please format your response as a JSON object with these exact keys:
 Make sure all data is completely fictional and appropriate for the specified gender, name origin, and country. Ensure the data is internally consistent (e.g., address matches country, phone format matches country, etc.).`;
 
   try {
-    const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
+    const response = await fetch(GEMINI_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "X-goog-api-key": GEMINI_API_KEY,
       },
       body: JSON.stringify({
         contents: [{
