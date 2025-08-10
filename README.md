@@ -1,3 +1,75 @@
+# 🪪 Fake Identity Generator
+
+A modern, customizable **fake identity generator** built with **Vite + React + TypeScript + shadcn/ui**.  
+Powered by the **Gemini API**, it instantly creates realistic test identities with personal, financial, and physical details — perfect for demos, testing, or creative projects.
+
+---
+
+## ✨ Features
+
+- **Customizable Generation**
+  - Gender: Male / Female / Random
+  - Name set: Multiple cultural and fictional name sets
+  - Country: Select from dozens of supported countries
+- **Comprehensive Fake Profiles**
+  - Full name, address, birth date, zodiac sign
+  - Contact info, usernames, passwords
+  - Financial data (masked credit cards, expiration, CVC2)
+  - Physical attributes, vehicles, tracking numbers, GUID
+- **Modern UI**
+  - Clean, minimal, responsive design
+  - Elegant tabs, dropdowns, and card-based layout
+  - Smooth animations with shadcn/ui and TailwindCSS
+
+---
+
+## 🚀 Tech Stack
+
+- [Vite](https://vitejs.dev/) — Fast development build tool
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [shadcn/ui](https://ui.shadcn.com/) — Modern UI components
+- [TailwindCSS](https://tailwindcss.com/) — Utility-first CSS
+- [Gemini API](https://ai.google.dev/) — AI-powered fake identity generation
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/fake-identity-generator.git
+cd fake-identity-generator
+```
+
+2. Install dependencies
+```
+npm install
+```
+
+3. Set up your environment variables
+Create a .env file in the root folder:
+```
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+4. Run the development server
+```
+npm run dev
+```
+
+## 🛠 Usage
+
+- Select your desired Gender, Name Set, and Country.
+- Click Generate Identity.
+- View your generated fake profile in neatly organized cards.
+
+## ⚠️ Disclaimer
+This tool is for educational, testing, and entertainment purposes only.
+Do not use generated identities for illegal or fraudulent activities.
+
+## 📄 License
+MIT License © 2025 R.Maunick
+
 # Welcome to your Lovable project
 
 ## Project info
